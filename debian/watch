@@ -1,0 +1,3 @@
+version=3
+opts="filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/golang-github-davecgh-go-spew-$1\.tar\.gz/" \
+  https://github.com/davecgh/go-spew/tags .*/v?(\d\S*)\.tar\.gz

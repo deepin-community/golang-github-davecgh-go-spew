@@ -1,0 +1,24 @@
+Source: golang-github-davecgh-go-spew
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-davecgh-go-spew
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-davecgh-go-spew.git
+Homepage: https://github.com/davecgh/go-spew
+XS-Go-Import-Path: github.com/davecgh/go-spew
+Rules-Requires-Root: no
+
+Package: golang-github-davecgh-go-spew-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Implements a deep pretty printer for Go data structures to aid in debugging
+ Go-spew implements a deep pretty printer for Go data structures to aid in
+ debugging. A comprehensive suite of tests with 100% test coverage is provided
+ to ensure proper functionality.
